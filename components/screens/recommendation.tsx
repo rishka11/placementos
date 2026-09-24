@@ -18,7 +18,6 @@ import {
   type FactorTone,
   evidenceMatch,
   getRanked,
-  priorityScore,
   rankingFactors,
   recommendedAction,
   relativeDay,
@@ -67,9 +66,6 @@ export function RecommendationScreen() {
   const factors = rankingFactors(top.opp, state)
   const action = recommendedAction(top.opp)
   const followed = state.followedId === top.opp.id
-  const lead = runnerUp
-    ? Math.round((priorityScore(top.opp) - priorityScore(runnerUp.opp)) * 10) / 10
-    : null
 
   function follow() {
     followRecommendation(top.opp.id)
@@ -100,15 +96,13 @@ export function RecommendationScreen() {
               <p className="mt-3 max-w-xl text-sm text-foreground">
                 This is your highest-leverage focus because its {top.opp.stage.toLowerCase()} is{" "}
                 {relativeDay(top.opp.nextDate)} and you already have {evidenceMatch(top.opp).toLowerCase()}{" "}
-                evidence — so a small amount of preparation moves you meaningfully closer to an offer.
+                evidence. A small amount of targeted preparation addresses the most immediate
+                preparation need.
               </p>
             </div>
             <div className="shrink-0 rounded-lg bg-primary/10 px-4 py-3 text-center">
-              <div className="text-xs text-muted-foreground">Priority score</div>
-              <div className="text-2xl font-bold text-primary">{top.score}</div>
-              {lead && lead > 0 ? (
-                <div className="text-xs text-muted-foreground">+{lead} vs next</div>
-              ) : null}
+              <div className="text-2xl font-bold text-primary">Priority #{top.rank}</div>
+              <div className="text-xs font-medium text-primary">{top.label}</div>
             </div>
           </div>
         </CardContent>

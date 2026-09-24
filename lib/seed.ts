@@ -27,7 +27,7 @@ export function createSeedOpportunities(): Opportunity[] {
         { id: "ns-4", text: "Data storytelling & dashboards", kind: "must", evidence: "Strong" },
         { id: "ns-5", text: "Stakeholder communication", kind: "must", evidence: "Strong" },
         { id: "ns-6", text: "Python for analysis", kind: "preferred", evidence: "Strong" },
-        { id: "ns-7", text: "SQL window functions", kind: "preferred", evidence: "Strong" },
+        { id: "ns-7", text: "SQL window functions", kind: "preferred", evidence: "Weak" },
         { id: "ns-8", text: "Amplitude / Mixpanel familiarity", kind: "preferred", evidence: "Unclear" },
         { id: "ns-9", text: "Basic wireframing", kind: "preferred", evidence: "None" },
       ],
@@ -44,7 +44,7 @@ export function createSeedOpportunities(): Opportunity[] {
       prepFocus: "SQL practice for take-home task",
       requirements: [
         { id: "ac-1", text: "SQL (joins & aggregations)", kind: "must", evidence: "Strong" },
-        { id: "ac-2", text: "SQL window functions", kind: "must", evidence: "Some" },
+        { id: "ac-2", text: "SQL window functions", kind: "must", evidence: "Weak" },
         { id: "ac-3", text: "Data cleaning & validation", kind: "must", evidence: "Strong" },
         { id: "ac-4", text: "Healthcare data familiarity", kind: "must", evidence: "Weak" },
         { id: "ac-5", text: "Dashboarding (Tableau / Looker)", kind: "preferred", evidence: "Some" },
