@@ -1,33 +1,106 @@
-# placementos
+# PlacementOS
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+PlacementOS is a decision-support product for college students managing multiple internship and entry-level job opportunities.
 
-## Built with v0
+It helps answer:
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+> Given my active opportunities and limited preparation time, what should I focus on next, and why?
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_LeaBNeIA2Rj76P95Z4SmxB5rwqKC)
+## Live Demo
 
-## Getting Started
+https://placementos-tau-kohl.vercel.app
 
-First, run the development server:
+## Problem
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Students may have multiple active applications, assessments, and interviews at the same time, but limited preparation time.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The challenge is not just understanding whether they match a job. It is deciding:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Which opportunity deserves attention first?
+- Which skill gap is most important?
+- How should limited preparation time be divided?
+- Why is one opportunity being prioritized over another?
 
-## Learn More
+## Core Features
 
-To learn more, take a look at the following resources:
+- Add and manage active opportunities
+- Analyze opportunity requirements
+- View Evidence Match
+- Identify Critical Gaps
+- Compare opportunities side-by-side
+- Prioritize opportunities based on multiple signals
+- Allocate weekly preparation time
+- Identify recurring high-leverage skill gaps
+- Explain why an opportunity is ranked first
+- Override recommendations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Product Principle
+
+PlacementOS provides decision support, not hiring predictions.
+
+The product is designed to keep recommendations:
+
+- Transparent
+- Explainable
+- Editable
+- User-controlled
+
+## Prioritization Signals
+
+PlacementOS considers:
+
+- Deadline urgency
+- Application stage
+- Evidence Match
+- Critical Gaps
+- Preparation effort
+- Skill reuse
+- User preference
+
+## MVP Scope
+
+The MVP intentionally does not include:
+
+- Job discovery
+- Job scraping
+- Resume rewriting
+- Generic AI chatbot
+- Interview simulator
+- LinkedIn integration
+- Calendar automation
+- Complex ML ranking
+- Agents or MCP
+
+The focus is one question:
+
+> What should I focus on next, and why?
+
+## Built With
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- v0
+- Vercel
+
+## Development Approach
+
+PlacementOS was developed as a Product Management case study using:
+
+- User research
+- Systems thinking
+- User segmentation
+- KPI definition
+- Opportunity mapping
+- MVP prioritization
+- Wireframing
+- Usability testing
+- Product iteration
+- AI-assisted development
+
+The functional MVP was built using AI-assisted coding after the product scope, user flow, and decision logic were defined.
+
+## Status
+
+Functional MVP deployed and ready for live user validation.
